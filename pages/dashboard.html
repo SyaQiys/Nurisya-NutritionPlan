@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NutritionPlan Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar --> 
+    <nav class="navbar">
+        <h1 class="logo">🥗 NutritionPlan</h1>
+
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="tracker.html">Tracker</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div>
+                <p class="subtitle">YOUR HEALTH JOURNEY STARTS HERE</p>
+                <h2>Eat Better, Live Healthier! 🌱</h2>
+                <p>
+                    Discover nutritional information and get personalized
+                    diet recommendations to support your health goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard-grid">
+
+            <!-- Food Nutrition Search -->
+            <div class="card">
+
+                <div class="card-icon">🍎</div>
+
+                <h2>Food Nutrition Search</h2>
+
+                <p class="card-description">
+                    Find out the nutritional value of your favourite foods.
+                </p>
+
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="foodInput"
+                        placeholder="e.g. Apple, Chicken, Rice"
+                    >
+
+                    <button id="searchBtn">
+                        Search Food
+                    </button>
+                </div>
+
+                <div id="foodResult" class="result-box">
+                    <p>Food nutrition information will appear here.</p>
+                </div>
+
+            </div>
+
+            <!-- Diet Recommendation -->
+            <div class="card">
+
+                <div class="card-icon">🥗</div>
+
+                <h2>Diet Recommendation</h2>
+
+                <p class="card-description">
+                    Choose your health goal to receive suitable food suggestions.
+                </p>
+
+                <label for="dietType">Select Your Health Goal</label>
+
+                <select id="dietType">
+                    <option value="">Choose your diet goal</option>
+                    <option value="weightloss">Weight Loss</option>
+                    <option value="musclegain">Muscle Gain</option>
+                    <option value="healthy">Healthy Living</option>
+                </select>
+
+                <button id="suggestBtn">
+                    Get Recommendation
+                </button>
+
+                <div id="suggestionResult" class="result-box">
+                    <p>Your diet recommendations will appear here.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Healthy Lifestyle Section -->
+        <section class="tips-section">
+
+            <h2>Healthy Eating Tips 💚</h2>
+
+            <div class="tips-grid">
+
+                <div class="tip-item">
+                    <span>💧</span>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink enough water throughout the day.</p>
+                </div>
+
+                <div class="tip-item">
+                    <span>🥦</span>
+                    <h3>Eat More Vegetables</h3>
+                    <p>Include vegetables in your daily meals.</p>
+                </div>
+
+                <div class="tip-item">
+                    <span>🍗</span>
+                    <h3>Choose Protein</h3>
+                    <p>Include protein-rich foods in your diet.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 NutritionPlan | Eat Well, Live Well 🌱</p>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+</html>
